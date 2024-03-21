@@ -3,7 +3,7 @@ CS151 Project
 • Project title: PlayStation Network Account Model
 
 • Team #, team members 
-Project 5, Jake Doxey, David Huyng, Nam Nguyen
+Project 1, Jake Doxey, David Huyng, Nam Nguyen
 
 • Team members working on the proposal 
 All
