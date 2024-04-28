@@ -1,15 +1,20 @@
 package com.example.project.Model;
 
+import java.util.HashMap;
+import java.util.List;
+
 public class Account implements Comparable<Account>{
     private String userName;
     private String password;
     private int level;
     private int exp;
-    public Account(String userName, String password, int level, int exp){
+    private HashMap<String, Game> library;
+    public Account(String userName, String password, int level, int exp, HashMap<String, Game> library){
         this.userName = userName;
         this.password = password;
         this.level = level;
         this.exp = exp;
+        this.library = library;
     }
     public int compareTo(Account other){
         if (this.getLevel() != other.getLevel()){
@@ -40,5 +45,13 @@ public class Account implements Comparable<Account>{
     }
     public void setExp(int exp) {
         this.exp = exp;
+    }
+
+    public HashMap<String, Game> getLibrary() {
+        return library;
+    }
+
+    public void setLibrary(HashMap<String, Game> library) {
+        this.library = library;
     }
 }
