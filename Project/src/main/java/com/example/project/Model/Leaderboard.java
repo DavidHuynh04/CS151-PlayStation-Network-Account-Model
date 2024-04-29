@@ -1,35 +1,34 @@
 package com.example.project.Model;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
+
 public class Leaderboard{
     private Account account;
-    List<Account> inOrder;
+    private TreeSet<Account> leaderboards;
 
-    public int compareTo(Account other){
-        if (this.account.getLevel() != other.getLevel()){
-            return Integer.compare(this.account.getLevel(), other.getLevel());
-        }
-        return Integer.compare(this.account.getExp(), other.getExp());
+
+    public Leaderboard () {
+        this.leaderboards = new TreeSet<>(new AccountComparator());
     }
 
-    public List<Account> leaderboard(HashMap<String, Account> accounts){
-        inOrder = new ArrayList<>(accounts.values());
-        Collections.sort(inOrder);
-        return inOrder;
+    public void addAccount(Account account){
+        leaderboards.add(account);
     }
     public int getPosition(Account account){
-        int position = 1;
-        for (int i = 0; i < inOrder.size(); i++){
-            if (!account.equals(inOrder.get(i))){
-                position++;
+        return leaderboards.headSet(account, false).size()+1;
+    }
+    private static class AccountComparator implements Comparator<Account>{
+        @Override
+        public int compare(Account a1, Account a2) {
+            if(a1.getLevel() != a2.getLevel()){
+                return  Integer.compare(a2.getLevel(),a1.getLevel());
             }
-            else{
-                break;
-            }
+            return Integer.compare(a2.getExp(), a1.getExp());
         }
-        return position;
+
     }
 }
+
+
+
+
