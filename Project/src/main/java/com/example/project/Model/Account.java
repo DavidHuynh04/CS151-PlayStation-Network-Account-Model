@@ -4,18 +4,28 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Account implements Comparable<Account>{
-    private String userName;
+    private String username;
+    private String email;
     private String password;
     private int level;
     private int exp;
     private int position;
     private HashMap<String, Game> library;
-    public Account(String userName, String password, int level, int exp,  HashMap<String, Game> library){
-        this.userName = userName;
+    public Account(String username, String email, String password, int level, int exp,  HashMap<String, Game> library){
+        this.username = username;
+        this.email = email;
         this.password = password;
         this.level = level;
         this.exp = exp;
         this.library = library;
+    }
+    public Account(String username, String email, String password) {
+        this.username = username;
+        this.email = email;
+        this.password = password;
+        this.level = 0;
+        this.exp = 0;
+        this.library = new HashMap<String, Game>();
     }
     public int compareTo(Account other){
         if (this.getLevel() != other.getLevel()){
@@ -24,10 +34,16 @@ public class Account implements Comparable<Account>{
         return Integer.compare(this.getExp(), this.getExp());
     }
     public String getUserName() {
-        return userName;
+        return username;
     }
     public void setUserName(String userName) {
-        this.userName = userName;
+        this.username = userName;
+    }
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
     }
     public String getPassword() {
         return password;
