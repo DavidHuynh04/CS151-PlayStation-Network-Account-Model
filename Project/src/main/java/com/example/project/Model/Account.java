@@ -70,15 +70,24 @@ public class Account implements Comparable<Account>{
         this.library = library;
     }
     public void addGame(String gameKey, Game game) {
-        // currently being set to game if change when we added achievements/trophy
         library.put(gameKey, game);
-        int gameExp = 15;
-        exp += gameExp;
+        exp += game.getTotalTrophyPoints();
         while (canLevelUp()) {
             levelUp();
         }
     }
+    public void addTrophy(Trophy t, Game game){
+        if(game.addTropphyToGame(t)){
+            exp += t.getTrophyPoints();
+            while (canLevelUp()) {
+                levelUp();
+            }
+        }
+        else{
+            System.out.println("Trophy Already exist");
+        }
 
+    }
     private boolean canLevelUp() {
         int expRequired;
         if (level >= 1 && level <= 100) {
