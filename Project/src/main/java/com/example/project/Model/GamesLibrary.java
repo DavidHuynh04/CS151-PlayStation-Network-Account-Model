@@ -6,7 +6,7 @@ import org.json.simple.*;
 import org.json.simple.parser.*;
 
 public class GamesLibrary {
-    private static HashMap<String, Game> library = new HashMap<>();
+    private static HashMap<String, Game> masterLibrary = new HashMap<>();
     public void initializeLibrary(){
         JSONParser parser = new JSONParser();
         try{
@@ -18,16 +18,16 @@ public class GamesLibrary {
                 String title = (String) gameJSONObject.get("gameTitle");
                 String imageString = (String) gameJSONObject.get("image");
                 InputStream image = GamesLibrary.class.getResourceAsStream(STR."/com/example/project/gameCovers/\{imageString}");
-                List<Trophy> trophyList = new ArrayList<>();
+                HashMap<String, Trophy> trophyList = new HashMap<>();
                 JSONArray trophies = (JSONArray) gameJSONObject.get("trophies");
                 for (Object trophy: trophies){
                     JSONObject trophyJSONObject = (JSONObject) trophy;
                     String trophyTitle = (String) trophyJSONObject.get("trophy");
                     String description = (String) trophyJSONObject.get("description");
                     int points = ((Long) trophyJSONObject.get("value")).intValue();
-                    trophyList.add(new Trophy(trophyTitle, description, points));
+                    trophyList.put(trophyTitle, new Trophy(trophyTitle, description, points));
                 }
-                library.put(title, new Game(title, image, trophyList));
+                masterLibrary.put(title, new Game(title, image, trophyList));
             }
         }
         catch(Exception e){
@@ -35,19 +35,20 @@ public class GamesLibrary {
         }
     }
     public HashMap<String, Game> getLibrary() {
-        return library;
+        return masterLibrary;
     }
     public static void main(String[] args) {
         GamesLibrary gamesLibrary = new GamesLibrary();
         gamesLibrary.initializeLibrary();
 
         // Print the contents of the library HashMap
-        for (String title : library.keySet()) {
-            Game game = library.get(title);
+        for (String title : masterLibrary.keySet()) {
+            Game game = masterLibrary.get(title);
             System.out.println("Title: " + title);
             System.out.println("Image: " + game.getImage()); // Assuming getImage() returns a string representation
             System.out.println("Trophies:");
-            for (Trophy trophy : game.getTrophyList()) {
+            for (String trophyTitle : game.getTrophyList().keySet()) {
+                Trophy trophy = game.getTrophyList().get(trophyTitle);
                 System.out.println("  Trophy Title: " + trophy.getTrophyTitle());
                 System.out.println("  Description: " + trophy.getDescription());
                 System.out.println("  Points: " + trophy.getTrophyPoints());
