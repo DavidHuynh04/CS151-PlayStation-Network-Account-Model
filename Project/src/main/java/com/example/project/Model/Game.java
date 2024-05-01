@@ -30,4 +30,7 @@ public class Game {
     public HashMap<String, Trophy> getTrophyList() {
         return trophyList;
     }
+    public Trophy getTrophy(String title){
+        return trophyList.get(title);
+    }
 }

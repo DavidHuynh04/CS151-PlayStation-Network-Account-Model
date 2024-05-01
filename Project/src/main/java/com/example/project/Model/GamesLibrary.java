@@ -1,12 +1,22 @@
 package com.example.project.Model;
 import java.util.HashMap;
 import java.io.*;
-import java.util.*;
 import org.json.simple.*;
 import org.json.simple.parser.*;
 
 public class GamesLibrary {
-    private static HashMap<String, Game> masterLibrary = new HashMap<>();
+    private static GamesLibrary instance;
+    private static HashMap<String, Game> masterLibrary;
+    private GamesLibrary(){
+        masterLibrary = new HashMap<>();
+        initializeLibrary();
+    }
+    public static GamesLibrary getInstance(){
+        if (instance == null){
+            instance = new GamesLibrary();
+        }
+        return instance;
+    }
     public void initializeLibrary(){
         JSONParser parser = new JSONParser();
         try{
@@ -34,8 +44,8 @@ public class GamesLibrary {
             e.printStackTrace();
         }
     }
-    public HashMap<String, Game> getLibrary() {
-        return masterLibrary;
+    public Game getGame(String title){
+        return masterLibrary.get(title);
     }
     public static void main(String[] args) {
         GamesLibrary gamesLibrary = new GamesLibrary();

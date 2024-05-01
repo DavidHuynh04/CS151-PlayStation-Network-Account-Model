@@ -9,7 +9,6 @@ public class Account implements Comparable<Account>{
     private String password;
     private int level;
     private int exp;
-    private int position;
     private HashMap<String, Game> library;
     public Account(String username, String email, String password, int level, int exp,  HashMap<String, Game> library){
         this.username = username;

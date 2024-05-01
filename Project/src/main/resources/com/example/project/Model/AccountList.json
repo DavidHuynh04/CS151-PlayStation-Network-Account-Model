@@ -2,12 +2,19 @@
   "Accounts":
   [
     {
-      "username": "Koala",
-      "password": "Ilikekoalas",
-      "level": "1",
-      "exp": "0",
-      "games":"TTTTTFFFFF",
-      "achievements":""
+    "userName": "testUser",
+    "email": "testUser@gmail.com",
+    "password": "Testpassword1!",
+    "level": 0,
+    "exp": 0,
+    "gameLibrary": [
+      {
+        "gameTitle": "GOD OF WAR RAGNAROK",
+        "trophies": [
+          "a", "b", "c"
+        ]
+      }
+    ]
     }
   ]
 }

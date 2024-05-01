@@ -17,6 +17,9 @@ public class AccountManager {
     public void createAccount(String username, String email, String password){
         accounts.put(username, new Account(username, email, password));
     }
+    public void createAccount(String username, String email, String password,int exp, int level, HashMap<String, Game> library){
+        accounts.put(username, new Account(username, email, password, exp, level, library));
+    }
     public void deleteAccount(String userName){
         accounts.remove(userName);
     }
@@ -32,5 +35,8 @@ public class AccountManager {
             return account.getPassword().equals(password);
         }
         return false;
+    }
+    public HashMap<String, Account> getAccounts() {
+        return accounts;
     }
 }
