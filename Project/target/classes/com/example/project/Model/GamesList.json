@@ -7,52 +7,52 @@
       {
         "trophy": "Back in the Mud",
         "description": "Complete Chapter 1.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "To Greener Pastures",
         "description": "Complete Chapter 2.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Settling Feuds",
         "description": "Complete Chapter 3.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Washed Ashore",
         "description": "Complete Chapter 4.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "No Traitors",
         "description": "Complete Chapter 5.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Redemption",
         "description": "Complete 'Red Dead Redemption'.",
-        "value": "silver"
+        "value": 30
       },
       {
         "trophy": "Lending a Hand",
         "description": "Complete all optional Honor story missions.",
-        "value": "silver"
+        "value": 30
       },
       {
         "trophy": "Gold Rush",
         "description": "Earn 70 Gold Medals in Story missions.",
-        "value": "silver"
+        "value": 30
       },
       {
         "trophy": "Endless Summer",
         "description": "Complete the Epilogue.",
-        "value": "gold"
+        "value": 90
       },
       {
         "trophy": "Best in the West",
         "description": "Attain 100% completion.",
-        "value": "gold"
+        "value": 90
       }
     ]},
     {
@@ -62,52 +62,52 @@
       {
         "trophy": "The Fool",
         "description": "Become a mercenary.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "The Lovers",
         "description": "Steal the Relic.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "The Hermit",
         "description": "Find Alt Cunningham.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "The Wheel of Fortune",
         "description": "Interrogate Anders Hellman.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "The High Priestess",
         "description": "Talk with Hanako Arasaka.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "The Devil",
         "description": "Help Takemura avenge the death of Saburo Arasaka.",
-        "value": "silver"
+        "value": 30
       },
       {
         "trophy": "The Star",
         "description": "Leave Night City with the Aldecaldos.",
-        "value": "silver"
+        "value": 30
       },
       {
         "trophy": "The Sun",
         "description": "Become a legend of the Afterlife.",
-        "value": "silver"
+        "value": 30
       },
       {
         "trophy": "The World",
         "description": "Complete the main storyline.",
-        "value": "gold"
+        "value": 90
       },
       {
         "trophy": "Legend of The Afterlife",
         "description": "Reach max Street Cred.",
-        "value": "gold"
+        "value": 90
       }
     ]},
     {
@@ -117,52 +117,52 @@
       {
         "trophy": "Blood Debt",
         "description": "Battle the God of Thunder.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "The Curator",
         "description": "Collect all of the Artifacts.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Comeuppance",
         "description": "Battle Heimdall.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Better Together",
         "description": "Battle Hrist and Mist.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Rebel Leader",
         "description": "Return the Hammer of the Rebellion.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Dragon Slayer",
         "description": "Craft the Dragon Scaled Armor Set.",
-        "value": "silver"
+        "value": 30
       },
       {
         "trophy": "Funeral for a Friend",
         "description": "Attend the funeral.",
-        "value": "silver"
+        "value": 30
       },
       {
         "trophy": "Trials by Fire",
         "description": "Complete the Trials of Muspelheim.",
-        "value": "silver"
+        "value": 30
       },
       {
         "trophy": "Ready for Commitment",
         "description": "Fully upgrade one armor set.",
-        "value": "gold"
+        "value": 90
       },
       {
         "trophy": "Ragnarok",
         "description": "Battle the All-Father.",
-        "value": "gold"
+        "value": 90
       }
     ]
     },
@@ -173,52 +173,52 @@
       {
         "trophy": "A New Suit",
         "description": "Acquire the Black Suit.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Overdrive",
         "description": "As Miles, use Reverse Flux to pull 6 or more enemies together simultaneously.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Fully Loaded",
         "description": "Purchase all of Spider-Man's Suit Tech upgrades.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Home Run!",
         "description": "Round the bases at the Big Apple Ballers Stadium.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Antidote",
         "description": "Defeat a Symbiote that is under the effect of Anti-Venom status.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Seek and Destroy",
         "description": "Complete all Hunter Bases.",
-        "value": "silver"
+        "value": 30
       },
       {
         "trophy": "Friendly Neighborhood Spider-Man",
         "description": "Complete all FNSM requests.",
-        "value": "silver"
+        "value": 30
       },
       {
         "trophy": "Armed and Dangerous",
         "description": "Defeat 100 enemies with Spider Arm abilities.",
-        "value": "silver"
+        "value": 30
       },
       {
         "trophy": "Heal the World",
         "description": "Finish the main story.",
-        "value": "gold"
+        "value": 90
       },
       {
         "trophy": "Superior",
         "description": "100% complete all districts.",
-        "value": "gold"
+        "value": 90
       }
     ]
     },
@@ -229,52 +229,52 @@
       {
       "trophy": "The Grand Sacrifice",
       "description": "In a public match, get 4 sacrifices in a single match.",
-      "value": "bronze"
+      "value": 15
       },
       {
         "trophy": "Blood on your hands",
         "description": "In a public match, kill your first survivor.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Blood in your mouth",
         "description": "In public matches, kill a total of 15 survivors.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Agonizing Escape",
         "description": "In a public match, crawl your way out.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "No one left behind",
         "description": "In a public match, rescue someone after at least one gate has opened.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Blood on your face",
         "description": "In a public match, kill 4 survivors in a single match.",
-        "value": "silver"
+        "value": 30
       },
       {
         "trophy": "The Key to Escape",
         "description": "Escape through the Hatch using a Key in a public match.",
-        "value": "silver"
+        "value": 30
       },
       {
         "trophy": "Risk it all",
         "description": "In a public match, as a survivor, use an ultra-rare item or add-on without using a protective ward.",
-        "value": "silver"
+        "value": 30
       },
       {
         "trophy": "Adept Min",
         "description": "In a public match, escape with Min using only her 3 unique perks.",
-        "value": "gold"
+        "value": 90
       },
       {
         "trophy": "Deep Cleansing",
         "description": "In public matches, cleanse 10 Hex totems.",
-        "value": "gold"
+        "value": 90
       }
     ]
     },
@@ -285,52 +285,52 @@
        {
          "trophy": "Blue Goddess",
          "description": "Meet Nimue.",
-         "value": "bronze"
+         "value": 15
        },
        {
          "trophy": "Equal Measures",
          "description": "Receive an Alignment Reading from Meidra.",
-         "value": "bronze"
+         "value": 15
        },
        {
          "trophy": "Tall Tales",
          "description": "Listen to All of Mudtooth's Stories.",
-         "value": "bronze"
+         "value": 15
        },
        {
          "trophy": "Am I Seeing This?",
          "description": "Defeat 10 Aberrations.",
-         "value": "bronze"
+         "value": 15
        },
        {
          "trophy": "Only Human",
          "description": "Defeat a Boss in Single-Player Without Taking Any Damage.",
-         "value": "bronze"
+         "value": 15
        },
        {
          "trophy": "Power Surge",
          "description": "Defeat Guardian of N'Erud.",
-         "value": "silver"
+         "value": 30
        },
        {
          "trophy": "Top Performer",
          "description": "Reach Level 10 on Any Archetype.",
-         "value": "silver"
+         "value": 30
        },
        {
          "trophy": "Maxed Out!",
          "description": "Acquire the Max Number of Trait Points.",
-         "value": "silver"
+         "value": 30
        },
        {
          "trophy": "No One Should Have All That Power",
          "description": "Upgrade a Standard Weapon to +20.",
-         "value": "gold"
+         "value": 90
        },
        {
          "trophy": "Forever is a Long Time Coming",
          "description": "Defeat the Final Boss.",
-         "value": "gold"
+         "value": 90
        }
     ]
     },
@@ -341,52 +341,52 @@
       {
         "trophy": "Welcome to Los Santos",
         "description": "You repo'd a car and raced it through the heart of a sun-soaked metropolis.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Small Town, Big Job",
         "description": "You made a big impression at the Paleto Bay Chicken Festival.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "The Government Gimps",
         "description": "You recovered sensitive information from a highly defended federal building.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Out of Your Depth",
         "description": "You're gonna need a bigger boat...",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Pimp My Sidearm",
         "description": "Fully mod a weapon.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "To Live or Die in Los Santos",
         "description": "Completed the final mission.",
-        "value": "silver"
+        "value": 30
       },
       {
         "trophy": "San Andreas Sightseer",
         "description": "Explore all of Los Santos and Blaine County.",
-        "value": "silver"
+        "value": 30
       },
       {
         "trophy": "Kifflom!",
         "description": "Complete your path to enlightenment... or not.",
-        "value": "silver"
+        "value": 30
       },
       {
         "trophy": "Solid Gold, Baby!",
         "description": "Earn any 70 Gold Medals on Missions, Strangers and Freaks.",
-        "value": "gold"
+        "value": 90
       },
       {
         "trophy": "Career Criminal",
         "description": "Attain 100% Game Completion.",
-        "value": "gold"
+        "value": 90
       }
     ]
     },
@@ -397,52 +397,52 @@
       {
         "trophy": "Red Wolf of Radagon",
         "description": "Defeated the Red Wolf of Radagon.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Godskin Noble",
         "description": "Defeated Godskin Noble.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Astel, Naturalborn of the Void",
         "description": "Defeated Astel, Naturalborn of the Void.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Great Rune",
         "description": "Restored the power of a Great Rune.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Erdtree Aflame",
         "description": "Used kindling to set the Erdtree aflame.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "God-Slaying Armament",
         "description": "Upgraded any armament to its highest stage.",
-        "value": "silver"
+        "value": 30
       },
       {
         "trophy": "Legendary Ashen Remains",
         "description": "Acquired all legendary ashen remains.",
-        "value": "silver"
+        "value": 30
       },
       {
         "trophy": "Dragonlord Placidusax",
         "description": "Defeated Dragonlord Placidusax.",
-        "value": "silver"
+        "value": 30
       },
       {
         "trophy": "Elden Lord",
         "description": "Achieved the \"Elden Lord\" ending.",
-        "value": "gold"
+        "value": 90
       },
       {
         "trophy": "Age of the Stars",
         "description": "Achieved the \"Lord of Frenzied Flame\" ending.",
-        "value": "gold"
+        "value": 90
       }
     ]
     },
@@ -453,52 +453,52 @@
       {
         "trophy": "Descent From Avernus",
         "description": "Take control of the Nautiloid and escape the hells.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "The Plot Thickens",
         "description": "Leave Act One - for somewhere altogether darker.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "The City Awaits",
         "description": "Leave Act Two - Baldur's Gate is just over the horizon.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Roleplayer",
         "description": "Complete ten background goals in a single playthrough - you are one with your character.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Bedrolls and Breakfast",
         "description": "Take four full long rests in a single playthrough - adventuring's tiring work.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Absolute Power Corrupts",
         "description": "Reign with terror: take control of the Netherbrain and bend the world to your will.",
-        "value": "silver"
+        "value": 30
       },
       {
         "trophy": "Hero of the Forgotten Realms",
         "description": "Save the realms: destroy the Absolute once and for all.",
-        "value": "silver"
+        "value": 30
       },
       {
         "trophy": "Ceremorphosis",
         "description": "Make the ultimate sacrifice: become a mindflayer to defeat the Netherbrain.",
-        "value": "silver"
+        "value": 30
       },
       {
         "trophy": "All's Well That Ends Well",
         "description": "Finish the game (with a heartfelt \"thank you!\" from Larian Studios).",
-        "value": "gold"
+        "value": 90
       },
       {
         "trophy": "Critical Hit",
         "description": "Complete the game in Tactician mode.",
-        "value": "gold"
+        "value": 90
       }
     ]
     },
@@ -509,52 +509,52 @@
       {
         "trophy": "Minute to Win it",
         "description": "With only 60 seconds left, Win a game in which you were tied or trailing.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Speed Demon",
         "description": "Completely fill and then empty your Rocket Boost 10 times in a single match.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Pick-Me Up",
         "description": "Collect 5 Items.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Triple Threat",
         "description": "Win a 3v3 game.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Friendly",
         "description": "Play an Exhibition match.",
-        "value": "bronze"
+        "value": 15
       },
       {
         "trophy": "Helen's Pride",
         "description": "Score 6 Goals in a single game.",
-        "value": "silver"
+        "value": 30
       },
       {
         "trophy": "Rocketeer",
         "description": "Complete the regular Season.",
-        "value": "silver"
+        "value": 30
       },
       {
         "trophy": "Turbocharger",
         "description": "Use your Rocket Boost for a total of 5 minutes.",
-        "value": "silver"
+        "value": 30
       },
       {
         "trophy": "Far, Far Away...",
         "description": "Drive a total of 50 km.",
-        "value": "gold"
+        "value": 90
       },
       {
         "trophy": "Champion",
         "description": "Win the Season Championship.",
-        "value": "gold"
+        "value": 90
       }
     ]
     }
