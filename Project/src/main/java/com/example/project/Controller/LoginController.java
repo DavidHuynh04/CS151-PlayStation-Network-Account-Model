@@ -1,5 +1,6 @@
 package com.example.project.Controller;
 
+import com.example.project.Model.Account;
 import com.example.project.Model.AccountManager;
 import com.example.project.Utility.AlertUtility;
 import com.example.project.View.HelloApplication;
@@ -41,11 +42,17 @@ public class LoginController {
             try {
                 AlertUtility.showAlert(Alert.AlertType.INFORMATION, "Login Successful", "Welcome to Playstation " + username + "!");
                 FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/example/project/View/home.fxml"));
+
+
                 Scene homeScene = new Scene(fxmlLoader.load());
                 Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 stage.setScene(homeScene);
                 stage.setTitle("Home");
                 stage.show();
+
+                HomeController homeController = fxmlLoader.getController();
+                Account currentAccount = accountManager.getAccount(username);
+                homeController.setCurrentAccount(currentAccount);
             } catch (IOException e) {
                 e.printStackTrace();
             }

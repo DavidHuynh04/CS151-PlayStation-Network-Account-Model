@@ -6,7 +6,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 
 public class StartController {
@@ -21,6 +20,7 @@ public class StartController {
         Scene loginScene = new Scene(fxmlLoader.load());
         Stage stage = (Stage) loginButton.getScene().getWindow();
         stage.setScene(loginScene);
+        stage.setTitle("Login");
         stage.show();
     }
     @FXML

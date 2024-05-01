@@ -23,6 +23,9 @@ public class AccountManager {
     public boolean accountExists(String username) {
         return accounts.containsKey(username);
     }
+    public Account getAccount(String username) {
+        return accounts.get(username);
+    }
     public boolean validateLogin(String username, String password) {
         Account account = accounts.get(username);
         if (account != null) {
