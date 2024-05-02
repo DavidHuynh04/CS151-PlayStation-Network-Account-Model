@@ -1,13 +1,17 @@
 package com.example.project.Model;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.HashMap;
-import java.io.*;
-import org.json.simple.*;
-import org.json.simple.parser.*;
 
 public class GamesLibrary {
     private static GamesLibrary instance;
     private static HashMap<String, Game> masterLibrary;
-    private GamesLibrary(){
+    public GamesLibrary(){
         masterLibrary = new HashMap<>();
         initializeLibrary();
     }
@@ -27,7 +31,7 @@ public class GamesLibrary {
                 JSONObject gameJSONObject = (JSONObject) game;
                 String title = (String) gameJSONObject.get("gameTitle");
                 String imageString = (String) gameJSONObject.get("image");
-                InputStream image = GamesLibrary.class.getResourceAsStream(STR."/com/example/project/gameCovers/\{imageString}");
+                InputStream image = GamesLibrary.class.getResourceAsStream("/com/example/project/gameCovers/" + imageString);
                 HashMap<String, Trophy> trophyList = new HashMap<>();
                 JSONArray trophies = (JSONArray) gameJSONObject.get("trophies");
                 for (Object trophy: trophies){

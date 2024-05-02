@@ -35,15 +35,6 @@ public class HomeController {
         }
     }
     @FXML
-    void viewProfileClicked(MouseEvent event) {
-    }
-    @FXML
-    void viewFriendsClicked(MouseEvent event) {
-    }
-    @FXML
-    void viewLeaderboardsClicked(MouseEvent event) {
-    }
-    @FXML
     void homeButtonClicked(MouseEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/example/project/View/start.fxml"));
         Scene startScene = new Scene(fxmlLoader.load());
@@ -51,5 +42,29 @@ public class HomeController {
         stage.setTitle("PlayStation Network");
         stage.setScene(startScene);
         stage.show();
+
+        ProfileController profileController = fxmlLoader.getController();
+        profileController.setCurrentProfileAccount(currentAccount);
     }
+    @FXML
+    void viewProfileClicked(MouseEvent event) throws IOException {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/example/project/View/trophy.fxml"));
+            Scene profileScene = new Scene(fxmlLoader.load());
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(profileScene);
+            stage.setTitle("Profile Scene");
+            stage.show();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    @FXML
+    void viewFriendsClicked(MouseEvent event) {
+    }
+    @FXML
+    void viewLeaderboardsClicked(MouseEvent event) {
+    }
+
 }
