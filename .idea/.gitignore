@@ -7,4 +7,5 @@
 /dataSources/
 /dataSources.local.xml
 # Ignoring target folder
-/Project/target/
+Project/target/
+.DS_Store
