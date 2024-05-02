@@ -2,7 +2,7 @@
   "games": [
     {
     "gameTitle": "RED DEAD REDEMPTION 2",
-    "image": "Red_Dead_RedemptionII.jpg",
+    "image": "Red_Dead_Redemption_II.jpg",
     "trophies": [
       {
         "trophy": "Back in the Mud",
@@ -57,7 +57,7 @@
     ]},
     {
     "gameTitle": "CYBERPUNK 2077",
-    "image": "Cyberpunk2077.jpg",
+    "image": "Cyberpunk2077.png",
     "trophies":[
       {
         "trophy": "The Fool",

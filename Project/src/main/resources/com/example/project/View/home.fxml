@@ -36,7 +36,7 @@
             <Image url="@../Assets/playstation.png" />
          </image>
       </ImageView>
-      <HBox layoutX="408.0" layoutY="5.0" prefHeight="25.0" prefWidth="190.0" style="-fx-border-color: #FFFFFF; -fx-background-color: #000000;">
+      <HBox layoutX="475.0" layoutY="5.0" prefHeight="25.0" prefWidth="125.0" style="-fx-border-color: #FFFFFF; -fx-background-color: #000000;">
          <children>
             <Text fx:id="usernameField" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="username" translateX="10.0" wrappingWidth="80.0">
                <font>
@@ -44,11 +44,6 @@
                </font>
             </Text>
             <Text fx:id="levelField" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="lvl" wrappingWidth="30.0">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;---&quot; XP" translateX="15.0" wrappingWidth="80.0" fx:id="xpField">
                <font>
                   <Font size="14.0" />
                </font>

@@ -14,23 +14,35 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class LeaderBoardController {
-
+    @FXML
     public Text username1;
+    @FXML
     public Text username2;
+    @FXML
     public Text username3;
+    @FXML
     public Text username4;
+    @FXML
     public Text username5;
+    @FXML
     public Text user1lvl;
+    @FXML
     public Text user2lvl;
+    @FXML
     public Text user3lvl;
+    @FXML
     public Text user4lvl;
+    @FXML
     public Text user5lvl;
+    @FXML
+    private Text yourLvl;
+    @FXML
+    private Text yourUsername;
+    private Account currentAccount;
 
-    private Account you;
 
-
-    public void updateCurrentUser(Account you) {
-        this.you = you;
+    public void updateCurrentUser(Account account) {
+        this.currentAccount = account;
         username1.setText(Leaderboard.getInstance().getAccountAtPosition(0).getUserName());
         username2.setText(Leaderboard.getInstance().getAccountAtPosition(1).getUserName());
         username3.setText(Leaderboard.getInstance().getAccountAtPosition(2).getUserName());
@@ -41,6 +53,8 @@ public class LeaderBoardController {
         user3lvl.setText(String.valueOf(Leaderboard.getInstance().getAccountAtPosition(2).getLevel()));
         user4lvl.setText(String.valueOf(Leaderboard.getInstance().getAccountAtPosition(3).getLevel()));
         user5lvl.setText(String.valueOf(Leaderboard.getInstance().getAccountAtPosition(4).getLevel()));
+        yourUsername.setText(currentAccount.getUserName());
+        yourLvl.setText(String.valueOf(currentAccount.getLevel()));
 
 
     }
@@ -55,6 +69,6 @@ public class LeaderBoardController {
         stage.show();
 
         HomeController homeController = fxmlLoader.getController();
-        homeController.setCurrentAccount(you);
+        homeController.setCurrentAccount(currentAccount);
     }
 }

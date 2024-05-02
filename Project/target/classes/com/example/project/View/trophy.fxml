@@ -24,26 +24,26 @@
       </AnchorPane>
       <HBox alignment="CENTER" layoutX="111.0" layoutY="14.0" prefHeight="100.0" prefWidth="379.0">
          <children>
-            <Text fx:id="username" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="118.291015625">
+            <Text fx:id="usernameField" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="118.291015625">
                <font>
                   <Font size="24.0" />
                </font>
             </Text>
-            <Text fx:id="level" strokeType="OUTSIDE" strokeWidth="0.0" text="level" wrappingWidth="37.111328125">
+            <Text fx:id="levelField" strokeType="OUTSIDE" strokeWidth="0.0" text="level" wrappingWidth="37.111328125">
                <font>
                   <Font size="14.0" />
                </font>
             </Text>
-            <Text fx:id="exp" strokeType="OUTSIDE" strokeWidth="0.0" text="Exp" wrappingWidth="33.13671875">
+            <Text fx:id="expField" strokeType="OUTSIDE" strokeWidth="0.0" text="Exp" wrappingWidth="33.13671875">
                <font>
                   <Font size="14.0" />
                </font>
             </Text>
          </children>
       </HBox>
-      <ImageView fitHeight="77.0" fitWidth="110.0" layoutX="2.0" preserveRatio="true">
+      <ImageView fitHeight="85.0" fitWidth="69.0" layoutX="12.0" layoutY="318.0" onMouseClicked="#onHomeClicked" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Assets/playstation.png" />
+            <Image url="@../Assets/backbuttonpng.png" />
          </image>
       </ImageView>
    </children>
