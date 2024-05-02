@@ -9,7 +9,6 @@ public class Account implements Comparable<Account>{
     private String password;
     private int level;
     private int exp;
-    private int position;
     private HashMap<String, Game> library;
     public Account(String username, String email, String password, int level, int exp,  HashMap<String, Game> library){
         this.username = username;
@@ -69,15 +68,12 @@ public class Account implements Comparable<Account>{
     public void setLibrary(HashMap<String, Game> library) {
         this.library = library;
     }
-    public void addGame(String gameKey, Game game) {
-        library.put(gameKey, game);
-        exp += game.getTotalTrophyPoints();
-        while (canLevelUp()) {
-            levelUp();
-        }
+    public void addGame(String gameTitle, Game game) {
+        HashMap<String, Trophy> emptyMap = new HashMap<>();
+        library.put(gameTitle, new Game (game.getGameTitle(), game.getImage(), emptyMap));
     }
     public void addTrophy(Trophy t, Game game){
-        if(game.addTropphyToGame(t)){
+        if(game.addTrophyToGame(t)){
             exp += t.getTrophyPoints();
             while (canLevelUp()) {
                 levelUp();

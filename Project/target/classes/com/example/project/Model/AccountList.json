@@ -1,0 +1,13 @@
+{
+  "Accounts":
+  [
+    {
+      "username": "Koala",
+      "password": "Ilikekoalas",
+      "level": "1",
+      "exp": "0",
+      "games":"TTTTTFFFFF",
+      "achievements":""
+    }
+  ]
+}

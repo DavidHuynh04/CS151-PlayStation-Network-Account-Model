@@ -1,27 +1,36 @@
 package com.example.project.Model;
 
+import java.io.InputStream;
+import java.util.HashMap;
 import java.util.List;
 
 public class Game {
     private String gameTitle;
-    private List<Trophy> trophyList;
+    private InputStream image;
+    private HashMap<String, Trophy> trophyList;
 
-    public Game(String gameTitle, List<Trophy> trophyList){
+    public Game(String gameTitle, InputStream image, HashMap<String, Trophy> trophyList){
         this.gameTitle = gameTitle;
+        this.image = image;
         this.trophyList = trophyList;
     }
-    public boolean addTropphyToGame(Trophy t){
-        if (!this.trophyList.contains(t)){
-            trophyList.add(t);
+    public boolean addTrophyToGame(Trophy t){
+        if (!this.trophyList.containsKey(t.getTrophyTitle())){
+            trophyList.put(t.getTrophyTitle(), t);
             return true;
         }
         return false;
     }
-    public int getTotalTrophyPoints() {
-        int totalPoints = 0;
-        for (Trophy trophy : trophyList) {
-            totalPoints += trophy.getTrophyPoints();
-        }
-        return totalPoints;
+    public String getGameTitle() {
+        return gameTitle;
+    }
+    public InputStream getImage() {
+        return image;
+    }
+    public HashMap<String, Trophy> getTrophyList() {
+        return trophyList;
+    }
+    public Trophy getTrophy(String title){
+        return trophyList.get(title);
     }
 }
