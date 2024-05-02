@@ -48,7 +48,7 @@
                   <Font size="14.0" />
                </font>
             </Text>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="XP" translateX="15.0" wrappingWidth="80.0" fx:id="xpField">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;---&quot; XP" translateX="15.0" wrappingWidth="80.0" fx:id="xpField">
                <font>
                   <Font size="14.0" />
                </font>
@@ -56,11 +56,11 @@
          </children>
       </HBox>
       <ButtonBar layoutX="51.0" layoutY="332.0" prefHeight="63.0" prefWidth="495.0">
-        <buttons>
+         <buttons>
             <Button mnemonicParsing="false" onMouseClicked="#viewProfileClicked" prefHeight="75.0" prefWidth="150.0" style="-fx-background-color: #000000;" text="View Profile" textFill="WHITE" />
             <Button mnemonicParsing="false" onMouseClicked="#viewFriendsClicked" prefHeight="75.0" prefWidth="150.0" style="-fx-background-color: #000000;" text="View Friends" textFill="WHITE" />
-          <Button mnemonicParsing="false" onMouseClicked="#viewLeaderboardsClicked" prefHeight="75.0" prefWidth="150.0" style="-fx-background-color: #000000;" text="View Leaderboards" textFill="WHITE" />
-        </buttons>
+            <Button id="leaderboardButton" fx:id="leaderboardButton" mnemonicParsing="false" onMouseClicked="#viewLeaderboardsClicked" prefHeight="75.0" prefWidth="150.0" style="-fx-background-color: #000000;" styleClass="p5-font" stylesheets="/com/example/project/View/home.fxml" text="View Leaderboards" textFill="WHITE" />
+         </buttons>
       </ButtonBar>
    </children>
 </AnchorPane>

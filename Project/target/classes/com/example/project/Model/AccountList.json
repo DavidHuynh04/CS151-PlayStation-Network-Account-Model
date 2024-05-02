@@ -2,12 +2,177 @@
   "Accounts":
   [
     {
-      "username": "Koala",
-      "password": "Ilikekoalas",
-      "level": "1",
-      "exp": "0",
-      "games":"TTTTTFFFFF",
-      "achievements":""
+    "userName": "testUser",
+    "email": "testUser@gmail.com",
+    "password": "Testpassword1!",
+    "level": 0,
+    "exp": 0,
+    "gameLibrary": [
+      {
+        "gameTitle": "GOD OF WAR RAGNAROK",
+        "trophies": [
+        ]
+      }
+    ]
+    },
+    {
+      "userName": "Max Account",
+      "email": "maxuser@gmail.com",
+      "password": "Maxuser!lol1!",
+      "level": 57,
+      "exp": 30,
+      "gameLibrary": [
+        {
+          "gameTitle": "RED DEAD REDEMPTION 2",
+          "trophies": [
+            "No Traitors",
+            "Settling Feuds",
+            "Gold Rush",
+            "To Greener Pastures",
+            "Back in the Mud",
+            "Washed Ashore",
+            "Redemption",
+            "Endless Summer",
+            "Lending a Hand",
+            "Best in the West"
+          ]
+        },
+        {
+          "gameTitle": "CYBERPUNK 2077",
+          "trophies": [
+            "Legend of The Afterlife",
+            "The High Priestess",
+            "The Wheel of Fortune",
+            "The Devil",
+            "The Hermit",
+            "The Lovers",
+            "The Fool",
+            "The World",
+            "The Star",
+            "The Sun"
+          ]
+        },
+        {
+          "gameTitle": "DEAD BY DAYLIGHT",
+          "trophies": [
+            "The Key to Escape",
+            "Deep Cleansing",
+            "Adept Min",
+            "No one left behind",
+            "Blood in your mouth",
+            "Blood on your face",
+            "The Grand Sacrifice",
+            "Agonizing Escape",
+            "Risk it all",
+            "Blood on your hands"
+          ]
+        },
+        {
+          "gameTitle": "ELDEN RING",
+          "trophies": [
+            "Age of the Stars",
+            "God-Slaying Armament",
+            "Great Rune",
+            "Astel, Naturalborn of the Void",
+            "Legendary Ashen Remains",
+            "Godskin Noble",
+            "Red Wolf of Radagon",
+            "Erdtree Aflame",
+            "Elden Lord",
+            "Dragonlord Placidusax"
+          ]
+        },
+        {
+          "gameTitle": "GOD OF WAR RAGNAROK",
+          "trophies": [
+            "Better Together",
+            "Rebel Leader",
+            "Blood Debt",
+            "The Curator",
+            "Ready for Commitment",
+            "Trials by Fire",
+            "Ragnarok",
+            "Funeral for a Friend",
+            "Comeuppance",
+            "Dragon Slayer"
+          ]
+        },
+        {
+          "gameTitle": "REMNANT II",
+          "trophies": [
+            "Equal Measures",
+            "Only Human",
+            "Power Surge",
+            "Top Performer",
+            "Maxed Out!",
+            "Forever is a Long Time Coming",
+            "Blue Goddess",
+            "Tall Tales",
+            "Am I Seeing This?",
+            "No One Should Have All That Power"
+          ]
+        },
+        {
+          "gameTitle": "MARVEL'S SPIDER-MAN 2",
+          "trophies": [
+            "Seek and Destroy",
+            "A New Suit",
+            "Armed and Dangerous",
+            "Fully Loaded",
+            "Overdrive",
+            "Home Run!",
+            "Antidote",
+            "Heal the World",
+            "Friendly Neighborhood Spider-Man",
+            "Superior"
+          ]
+        },
+        {
+          "gameTitle": "ROCKET LEAGUE",
+          "trophies": [
+            "Friendly",
+            "Helen's Pride",
+            "Turbocharger",
+            "Speed Demon",
+            "Triple Threat",
+            "Minute to Win it",
+            "Champion",
+            "Rocketeer",
+            "Pick-Me Up",
+            "Far, Far Away..."
+          ]
+        },
+        {
+          "gameTitle": "BALDUR'S GATE III",
+          "trophies": [
+            "Critical Hit",
+            "Roleplayer",
+            "The Plot Thickens",
+            "The City Awaits",
+            "All's Well That Ends Well",
+            "Bedrolls and Breakfast",
+            "Absolute Power Corrupts",
+            "Ceremorphosis",
+            "Descent From Avernus",
+            "Hero of the Forgotten Realms"
+          ]
+        },
+        {
+          "gameTitle": "GRAND THEFT AUTO V",
+          "trophies": [
+            "The Government Gimps",
+            "Career Criminal",
+            "Welcome to Los Santos",
+            "Kifflom!",
+            "Small Town, Big Job",
+            "San Andreas Sightseer",
+            "Solid Gold, Baby!",
+            "To Live or Die in Los Santos",
+            "Out of Your Depth",
+            "Pimp My Sidearm"
+          ]
+        }
+      ]
     }
   ]
 }
