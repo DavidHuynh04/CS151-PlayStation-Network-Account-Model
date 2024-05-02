@@ -3,8 +3,11 @@ package com.example.project.Controller;
 import com.example.project.Model.Account;
 import com.example.project.Model.Game;
 import com.example.project.Model.GamesLibrary;
+import com.example.project.View.HelloApplication;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -13,20 +16,23 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class ProfileController {
     @FXML
-    public Text exp;
+    public Text expField;
 
     public TextField searchBar;
 
     public HBox cardsContainer;
 
     @FXML
-    private Text level;
+    private Text levelField;
 
     @FXML
-    private Text username;
+    private Text usernameField;
 
     private Account currentAccount;
 
@@ -39,10 +45,22 @@ public class ProfileController {
     @FXML
     private void updateProfile() {
         if (currentAccount != null) {
-            username.setText(currentAccount.getUserName());
-            level.setText(String.valueOf(currentAccount.getLevel()));
-            exp.setText(currentAccount.getExp() + " XP");
+            usernameField.setText(currentAccount.getUserName());
+            levelField.setText(String.valueOf(currentAccount.getLevel()));
+            expField.setText(currentAccount.getExp() + " XP");
         }
+    }
+    @FXML
+    void onHomeClicked(MouseEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/example/project/View/home.fxml"));
+        Scene homeScene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(homeScene);
+        stage.setTitle("Home");
+        stage.show();
+
+        HomeController homeController = fxmlLoader.getController();
+        homeController.setCurrentAccount(currentAccount);
     }
     @FXML
     void searchingClicked(MouseEvent event) {

@@ -39,7 +39,21 @@ public class HomeController {
     }
 
     @FXML
-    void viewProfileClicked(MouseEvent event) {
+    void viewProfileClicked(MouseEvent event) throws IOException {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/example/project/View/trophy.fxml"));
+            Scene profileScene = new Scene(fxmlLoader.load());
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(profileScene);
+            stage.setTitle("Profile Scene");
+
+            ProfileController profileController = fxmlLoader.getController();
+            profileController.setCurrentProfileAccount(currentAccount);
+            stage.show();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
@@ -54,7 +68,7 @@ public class HomeController {
         stage.setScene(homeScene);
         stage.setTitle("PlayStation Leaderboards");
         LeaderBoardController leaderBoardController = fxmlLoader.getController();
-        leaderBoardController.updateCurrentUser(currentAccount.getUserName(), currentAccount.getLevel());
+        leaderBoardController.updateCurrentUser(currentAccount);
         stage.show();
     }
 

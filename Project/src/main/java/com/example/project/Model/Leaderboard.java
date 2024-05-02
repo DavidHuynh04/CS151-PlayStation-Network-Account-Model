@@ -3,19 +3,39 @@ package com.example.project.Model;
 import java.util.*;
 
 public class Leaderboard{
-    private Account account;
-    private TreeSet<Account> leaderboards;
-
-
+    private static Leaderboard intan = null;
+    private ArrayList<Account> leaderboards;
+    private TreeSet<Account> comparelist = new TreeSet<>(new AccountComparator());
     public Leaderboard () {
-        this.leaderboards = new TreeSet<>(new AccountComparator());
+        leaderboards = new ArrayList<>();
     }
+    public static Leaderboard getInstance(){
+        if (intan == null){
+            intan = new Leaderboard();
+        }
+        return intan;
+    }
+    public Account getAccountAtPosition(int i){
+        if (leaderboards.isEmpty()){
+            Sort();
+        }
 
+        return leaderboards.get(i);
+    }
     public void addAccount(Account account){
-        leaderboards.add(account);
+        comparelist.add(account);
+    }
+    public void Sort(){
+        leaderboards = new ArrayList<>(comparelist);
     }
     public int getPosition(Account account){
-        return leaderboards.headSet(account, false).size()+1;
+        for (int i = 0; i < leaderboards.size(); i++){
+            if (account == leaderboards.get(i))
+            {
+                return i;
+            }
+        }
+        return Integer.MAX_VALUE;
     }
     private static class AccountComparator implements Comparator<Account>{
         @Override

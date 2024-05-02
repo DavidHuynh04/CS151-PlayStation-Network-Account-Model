@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class AccountManager {
     private static AccountManager instance = null;
     private HashMap<String, Account> accounts;
-    private AccountManager() {
+    public AccountManager() {
         accounts = new HashMap<>();
     }
     public static AccountManager getInstance() {
@@ -19,6 +19,7 @@ public class AccountManager {
     }
     public void createAccount(String username, String email, String password,int exp, int level, HashMap<String, Game> library){
         accounts.put(username, new Account(username, email, password, exp, level, library));
+        Leaderboard.getInstance().addAccount(accounts.get(username));
     }
     public void deleteAccount(String userName){
         accounts.remove(userName);
