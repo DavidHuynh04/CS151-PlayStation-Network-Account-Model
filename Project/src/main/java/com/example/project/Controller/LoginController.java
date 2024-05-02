@@ -26,13 +26,13 @@ public class LoginController {
 
     @FXML
     void homeButtonClicked(MouseEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/example/project/View/start.fxml"));
-        Scene startScene = new Scene(fxmlLoader.load());
+        Scene startScene = new Scene(FXMLLoader.load(HelloApplication.class.getResource("/com/example/project/View/start.fxml")));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("PlayStation Network");
         stage.setScene(startScene);
         stage.show();
     }
+
     @FXML
     void Login(MouseEvent event) {
         String username = usernameField.getText();
@@ -42,12 +42,10 @@ public class LoginController {
             try {
                 AlertUtility.showAlert(Alert.AlertType.INFORMATION, "Login Successful", "Welcome to Playstation " + username + "!");
                 FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/example/project/View/home.fxml"));
-
-
                 Scene homeScene = new Scene(fxmlLoader.load());
                 Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 stage.setScene(homeScene);
-                stage.setTitle("Home");
+                stage.setTitle("PlayStation Home");
                 stage.show();
 
                 HomeController homeController = fxmlLoader.getController();
