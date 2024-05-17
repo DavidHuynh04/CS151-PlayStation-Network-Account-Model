@@ -57,7 +57,15 @@ public class HomeController {
     }
 
     @FXML
-    void viewFriendsClicked(MouseEvent event) {
+    void viewFriendsClicked(MouseEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/example/project/View/friend.fxml"));
+        Scene homeScene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(homeScene);
+        stage.setTitle("PlayStation Friend");
+        FriendController friendController = fxmlLoader.getController();
+        friendController.setCurrentProfileAccount(currentAccount);
+        stage.show();
     }
 
     @FXML

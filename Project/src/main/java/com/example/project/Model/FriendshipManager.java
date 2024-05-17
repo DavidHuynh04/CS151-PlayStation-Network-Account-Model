@@ -3,20 +3,20 @@ package com.example.project.Model;
 import java.util.*;
 
 public class FriendshipManager {
-    private final Map<String, Set<String>> friendships;
+    private final Map<String, Set<Account>> friendships;
 
     public FriendshipManager() {
         this.friendships = new HashMap<>();
     }
 
-    public void addFriendship(String user1, String user2) {
-        friendships.computeIfAbsent(user1, k -> new HashSet<>()).add(user2);
-        friendships.computeIfAbsent(user2, k -> new HashSet<>()).add(user1);
+    public void addFriendship(Account user1, Account user2) {
+        friendships.computeIfAbsent(user1.getUserName(), k -> new HashSet<>()).add(user2);
+        friendships.computeIfAbsent(user2.getUserName(), k -> new HashSet<>()).add(user1);
     }
 
-    public void removeFriendship(String user1, String user2) {
-        Set<String> friendsOfUser1 = friendships.get(user1);
-        Set<String> friendsOfUser2 = friendships.get(user2);
+    public void removeFriendship(Account user1, Account user2) {
+        Set<Account> friendsOfUser1 = friendships.get(user1.getUserName());
+        Set<Account> friendsOfUser2 = friendships.get(user2.getUserName());
         if (friendsOfUser1 != null) {
             friendsOfUser1.remove(user2);
         }
@@ -25,7 +25,7 @@ public class FriendshipManager {
         }
     }
 
-    public Set<String> getFriends(String userName) {
+    public Set<Account> getFriends(String userName) {
         return friendships.getOrDefault(userName, Collections.emptySet());
     }
 }
