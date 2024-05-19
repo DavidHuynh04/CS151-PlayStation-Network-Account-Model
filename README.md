@@ -42,7 +42,7 @@ Nam Nguyen:
 
 - So yeah I do run into multiple problems during the implementation of all the previously mentioned items like the fact that we still haven't able to get friend invitation working due to the fact that I will require me to change the implement of the friend list completely and needed to put it as an element of Account. plus the fact so far our API don't really have a friendlist in mind so a creation of friendlist would required an update of the Initializing code of the API. These are the problems that haven't been solved.
 
-- There are multiple features that have been cut due to time constraints like Friendlist or the saving data feature. 
+- There are multiple features that have been cut due to time constraints like Friendlist or the saving data feature. There is also a bugged on the search feature where if you search a game twice it would break(No solution have been found)
 
 
 • State the problem/issue to resolve
@@ -63,17 +63,34 @@ The solution to the issue is to implement an account system that keeps track of 
 • Operations: List operations for each intended user (in list format).  Be precise and specific. 
 User:
 They can create an account with a login in and out function
-View trophies and level
+View there own profiles that that have the game list pre-created. 
+View the game that is available in our library
 View leaderboard 
-Add friends/remove friend/block
-View friend trophies and level
-Add games to your library
-Adjust account settings
 System:
 Stores/maintains account information
 Adding trophies
 Viewing trophies
 Add point values to trophies
 
+Step to run!
+- To run this program you need to add the -vm option of the Javafx to the run config
+and you pretty much just run by clicking compile. 
+- In order for you to login you will need to created an account or use the premake account( This is a premake Account username: Max Account passwords: Maxuser!lol1! (this program is kinda case sentive to coppies exactly as you see with trim()) You should see the home page and from there there 3 option by login out click on the playstation icon. View your profile and search for game. by clicking on the view profile button, and search game button in the info page. And lastly View the leaderboard. to return to home from any of these pages just click the red buttons.
+
+This is the runnable program!
+![image](https://github.com/DavidHuynh04/CS151-PlayStation-Network-Account-Model/assets/108606639/565d4a32-5b5e-47db-a12c-174ac5387e1d)
+![image](https://github.com/DavidHuynh04/CS151-PlayStation-Network-Account-Model/assets/108606639/ab45cf5c-85d0-4568-9766-58729b1a014f)
+![image](https://github.com/DavidHuynh04/CS151-PlayStation-Network-Account-Model/assets/108606639/42f46046-6443-4e70-86ea-c548df33e64b)
+![image](https://github.com/DavidHuynh04/CS151-PlayStation-Network-Account-Model/assets/108606639/53226f50-b505-4a4e-8040-273ad81bdce9)
+![image](https://github.com/DavidHuynh04/CS151-PlayStation-Network-Account-Model/assets/108606639/c9b2cb2b-14c6-4061-9e2d-c2325e4a6f73)
+![image](https://github.com/DavidHuynh04/CS151-PlayStation-Network-Account-Model/assets/108606639/ffe6d47b-1436-478d-8181-10d8ed1033eb)
+![image](https://github.com/DavidHuynh04/CS151-PlayStation-Network-Account-Model/assets/108606639/9e0a9ede-837c-47b8-935e-8fa6167def92)
+![image](https://github.com/DavidHuynh04/CS151-PlayStation-Network-Account-Model/assets/108606639/197325ba-1dff-4211-9f04-d7059e93d333)
+
+
+
+
+
+ 
 • (Optional) References: must include citations in content using the format [1], [2], etc. 
 N/A
