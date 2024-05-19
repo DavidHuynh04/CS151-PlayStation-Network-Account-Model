@@ -96,5 +96,21 @@ public class InfoController {
         return vbox;
     }
 
+    @FXML
+    public void onSearchClicked(MouseEvent event) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/example/project/View/trophy.fxml"));
+            Scene profileScene = new Scene(fxmlLoader.load());
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(profileScene);
+            stage.setTitle("Search Scene");
 
+            ProfileController profileController = fxmlLoader.getController();
+            profileController.setCurrentProfileAccount(currentAccount);
+            stage.show();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
