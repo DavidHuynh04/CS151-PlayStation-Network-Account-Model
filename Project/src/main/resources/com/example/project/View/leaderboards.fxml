@@ -107,14 +107,11 @@
          </children>
       </VBox>
       <ImageView fitHeight="400.0" fitWidth="255.0" layoutX="357.0" layoutY="-3.0" preserveRatio="true">
-         <image>
-            <Image url="@../Assets/p5momentos.png" />
-         </image>
+         <Image url="@../Assets/p5momentos.png"/>
       </ImageView>
-      <ImageView fitHeight="85.0" fitWidth="69.0" layoutX="12.0" layoutY="318.0" onMouseClicked="#onHomeClicked" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Assets/backbuttonpng.png" />
-         </image>
+      <ImageView fitHeight="85.0" fitWidth="69.0" layoutX="12.0" layoutY="318.0" onMouseClicked="#onHomeClicked"
+                 pickOnBounds="true" preserveRatio="true">
+         <Image url="@../Assets/backbuttonpng.png"/>
       </ImageView>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="362.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
          <image>

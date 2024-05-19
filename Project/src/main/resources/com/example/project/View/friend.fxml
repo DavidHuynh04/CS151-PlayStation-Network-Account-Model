@@ -39,10 +39,9 @@
             </Text>
          </children>
       </HBox>
-      <ImageView fitHeight="85.0" fitWidth="69.0" layoutX="6.0" onMouseClicked="#onHomeClicked" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Assets/backbuttonpng.png" />
-         </image>
+      <ImageView fitHeight="85.0" fitWidth="69.0" layoutX="6.0" onMouseClicked="#onHomeClicked" pickOnBounds="true"
+                 preserveRatio="true">
+         <Image url="@../Assets/backbuttonpng.png"/>
       </ImageView>
       <TextField layoutX="400.0" layoutY="7.0" promptText="Enter Name" />
       <Button layoutX="536.0" layoutY="2.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="56.0" text="Send" />

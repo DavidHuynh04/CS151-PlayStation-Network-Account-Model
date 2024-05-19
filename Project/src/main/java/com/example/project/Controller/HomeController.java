@@ -41,14 +41,14 @@ public class HomeController {
     @FXML
     void viewProfileClicked(MouseEvent event) throws IOException {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/example/project/View/trophy.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/example/project/View/info.fxml"));
             Scene profileScene = new Scene(fxmlLoader.load());
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(profileScene);
-            stage.setTitle("Profile Scene");
+            stage.setTitle("Info Scene");
 
-            ProfileController profileController = fxmlLoader.getController();
-            profileController.setCurrentProfileAccount(currentAccount);
+            InfoController infoController = fxmlLoader.getController();
+            infoController.setCurrentProfileAccount(currentAccount);
             stage.show();
         }
         catch (IOException e) {

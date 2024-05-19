@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -13,35 +12,32 @@
    <children>
       <VBox layoutX="1.0" layoutY="122.0" prefHeight="200.0" prefWidth="600.0">
          <children>
-            <HBox prefHeight="100.0" prefWidth="200.0" />
-            <HBox prefHeight="100.0" prefWidth="200.0" />
-            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <HBox fx:id="game1" prefHeight="50.0" prefWidth="200.0" />
+            <HBox fx:id="game2" prefHeight="50.0" prefWidth="200.0" />
+            <HBox fx:id="game3" prefHeight="50.0" prefWidth="200.0" />
          </children>
       </VBox>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="379.0">
          <children>
-            <Text id="Username" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="118.291015625">
+            <Text fx:id="usernameField" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="118.291015625">
                <font>
                   <Font size="24.0" />
                </font>
             </Text>
-            <Text id="Level" strokeType="OUTSIDE" strokeWidth="0.0" text="level" wrappingWidth="37.111328125">
+            <Text fx:id="levelField" strokeType="OUTSIDE" strokeWidth="0.0" text="level" wrappingWidth="37.111328125">
                <font>
                   <Font size="14.0" />
                </font>
             </Text>
-            <Text id="Exp" strokeType="OUTSIDE" strokeWidth="0.0" text="Exp" wrappingWidth="33.13671875">
+            <Text fx:id="expField" strokeType="OUTSIDE" strokeWidth="0.0" text="Exp" wrappingWidth="33.13671875">
                <font>
                   <Font size="14.0" />
                </font>
             </Text>
          </children>
       </HBox>
-      <ImageView fitHeight="77.0" fitWidth="110.0" layoutY="322.0" onMouseClicked="#onHomeClicked" preserveRatio="true">
-         <image>
-            <Image/>
-         </image>
+      <ImageView fitHeight="85.0" fitWidth="69.0" layoutX="1.0" layoutY="331.0" onMouseClicked="#onHomeClicked" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../Assets/backbuttonpng.png" />
       </ImageView>
-      <HBox prefHeight="100.0" prefWidth="200.0" />
    </children>
 </AnchorPane>
