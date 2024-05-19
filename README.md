@@ -5,8 +5,36 @@ CS151 Project
 • Team #, team members 
 Project 1, Jake Doxey, David Huyng, Nam Nguyen
 
-• Team members working on the proposal 
-All
+• Project Contributions and Issues: 
+
+David Huyng: 
+
+Jake Doxey: 
+
+• Developed the start screen with navigation to the signup and login screen. 
+
+• Created the signup screen with error checking. The program throws exceptions if the username field is empty, the username already exists in the database, the email field is empty, and/or the email field doesn’t contain the ‘@’ symbol. For the password requirements, I made it so the password requires a lowercase letter, an uppercase letter, a special character, and a length of at least 8 characters.
+
+• Designed the login screen for user authentication. You can login with either your created account or with an account already in the database. 
+
+• Created the leaderboard screen that shows the top 5 players with the highest level in the database. Your currently logged in account will be shown at the bottom of the list compared to the leaderboards. I had help with Nam on this page implementing the top 5 users being shown on the page. 
+
+• Modified the UI of the home screen to look more clean and match the theming of the other screens I developed. I will show before and after pictures of the home screen showing my modifications.
+
+![originalhome](https://github.com/DavidHuynh04/CS151-PlayStation-Network-Account-Model/assets/24424867/46b70aee-72ec-41a4-9f0f-89802b06d1c9)
+
+ <img width="595" alt="newhome" src="https://github.com/DavidHuynh04/CS151-PlayStation-Network-Account-Model/assets/24424867/b7a43964-401a-4127-8857-b7183a8db626">
+ 
+• Although I mostly focused on developing the UI for the project, while developing the front end I needed to make some modifications to the backend to fit my needs. One example of this is modifying the accountmanager class to be a singleton. I did this so there would only be one instance of accountmanager that I could use to login to the account. This singleton was also used for the leaderboards.
+<img width="515" alt="amsingleton" src="https://github.com/DavidHuynh04/CS151-PlayStation-Network-Account-Model/assets/24424867/de5fb393-faca-47e8-854e-e1bf7661ecd3">
+
+• Another thing I added was a utility function for throwing errors. I did this so I could follow the DRY concept. If I didn’t add the utility function I would have had to rewrite the code for both the signup and login pages
+<img width="691" alt="utility" src="https://github.com/DavidHuynh04/CS151-PlayStation-Network-Account-Model/assets/24424867/ddef1967-e83d-41d7-af9e-913437e1652d">
+
+• Some issues I faced during the creation of this project was implementing custom fonts and implementing audio clips into button presses. The font was specifically going to be used on the leaderboard screen to match the Persona 5 theming (a video game). I ended up having issues with using the css file in my FXML file. I couldn’t figure out how to get it to work. I also wanted to use a persona 5 audio clip each time a button was clicked to add a more tactile feel. This introduced a whole suite of problems so I decided to cut this feature in the final version. 
+
+Nam Nguyen: 
+
 
 • State the problem/issue to resolve
 The issue to be resolved is a way to keep track of your PlayStation Account. This includes a friends list, a trophy list, an account level based on your trophies, etc….
