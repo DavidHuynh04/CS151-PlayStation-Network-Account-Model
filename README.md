@@ -3,11 +3,30 @@ CS151 Project
 • Project title: PlayStation Network Account Model
 
 • Team #, team members 
-Project 1, Jake Doxey, David Huyng, Nam Nguyen
+Project 1, Jake Doxey, David Huynh, Nam Nguyen
+
+• Proposal Contributions: 
+All memberts worked on filling out the proposal.
+
+• Project Presentations: 
+No slides were made, all members of the team did a demo and rundown of the parts that they worked on.
 
 • Project Contributions and Issues: 
 
-David Huyng: 
+David Huynh: 
+
+• Created the mock data / API in the form of JSON files. This includes the game covers, games list, and account lists. The games list contains 10 games with images, and 10 trophies each, that contain a title, a description, and a point value. The account list contains the stored data of accounts with account information as well as a stored library of all of the games and trophies associated with it.
+
+• Created the backend side. Created the Account Manager, Account, GamesLibrary, Game, and trophy .java files as a way to store and manage the data of Accounts and all of the games and trophies so that they can be accessed. 
+
+• Worked on the initial version of the leaderboard and comparator methods before it got changed.
+
+• Created the Account Initializer class, which parses through the data within the Account List JSON file to convert the information into Account objects upon program start, so that we can access previously created accounts.
+
+• Created a Games Library Class, which parses through the GamesList JSON file to convert the information into a master library with all the information, that we can access and get information to display.
+
+• Created an Account Saver class, which works to convert the accounts in the Account Manager after the program is run, back into a JSON structure, so that it can be written back to the JSON file for future use. Logic is implemented, but I have not made it overwrite the JSON file yet, as the frontend/UI is not yet ready, so I was unable to  properly test it.
+
 
 Jake Doxey: 
 
