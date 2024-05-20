@@ -27,6 +27,8 @@ David Huynh:
 
 • Created an Account Saver class, which works to convert the accounts in the Account Manager after the program is run, back into a JSON structure, so that it can be written back to the JSON file for future use. Logic is implemented, but I have not made it overwrite the JSON file yet, as the frontend/UI is not yet ready, so I was unable to  properly test it.
 
+• Issues: 
+The frontend/UI was not complete so not all of the stuff I worked on could be tested.
 
 Jake Doxey: 
 
@@ -63,7 +65,6 @@ Nam Nguyen:
 
 - There are multiple features that have been cut due to time constraints like Friendlist or the saving data feature. There is also a bugged on the search feature where if you search a game twice it would break(No solution have been found)
 
-
 • State the problem/issue to resolve
 The issue to be resolved is a way to keep track of your PlayStation Account. This includes a friends list, a trophy list, an account level based on your trophies, etc….
 
@@ -72,6 +73,12 @@ N/A
 
 • If applicable, describe assumptions / operating environments / intended usage 
 The assumption will be that the user plays games to which we can award trophies that are attached to said account. The operation environment will be in the playstation environment, an application that is meant to supplement the experience of playing on a game system. The intended usage is to allow the user to view both information regarding the activity of the player (accumulated trophies) as well as others.
+
+• Diagrams: 
+Class Diagram:	https://github.com/DavidHuynh04/CS151-PlayStation-Network-Account-Model/blob/main/diagrams/ClassDiagram.png
+Use Cases Diagram: https://github.com/DavidHuynh04/CS151-PlayStation-Network-Account-Model/blob/main/diagrams/UsecaseDiagram.png
+State Diagram: https://github.com/DavidHuynh04/CS151-PlayStation-Network-Account-Model/blob/main/diagrams/StateDiagram.png
+Sequence Diagram: https://github.com/DavidHuynh04/CS151-PlayStation-Network-Account-Model/blob/main/diagrams/Sequence%20Diagram.drawio.png
 
 • High-level description of your solution which may include (but is not limited to), your plan and approach.  Be as specific as possible. 
 At a high level, I want to have an account be the parent class for all of the subclasses. The subclasses can possibly include different account types like “private friends list”, “private trophy list” “public everything” etc. I would have a class with static methods for the leaderboard so it can be accessed and updated without instantiating objects. I would also have to implement some method to calculate the account level based on the trophies earned from the account. If we are to replicate the trophy levels on real PSN accounts, this could be complex as the levels scale in points needed to level up. To make our program user-friendly, we will implement our account system using JavaFX, so users don’t have to type into the terminal and can have a visual representation of their account. In terms of adding achievements, we would have a database of games and their corresponding trophy lists. We would have methods that set trophies to be earned.
