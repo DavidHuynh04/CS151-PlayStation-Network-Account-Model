@@ -99,8 +99,17 @@ Viewing trophies
 Add point values to trophies
 
 Step to run!
-- To run this program you need to add the -vm option of the Javafx to the run config
-and you pretty much just run by clicking compile. 
+- First, download the appropriate version of JavaFX for your system at this link https://gluonhq.com/products/javafx/
+- Then you are going to click file at the top left corner, then under file click project structure. On the project structure screen, you should click on library, add new library, and then direct it to your downloaded (and unzipped) JavaFX folder.
+- Next you are going to click on the run button at the top left, and then click on edit configurations. You will need to add a new configuration. You can click on the Application option and then name your configuration HelloApplication. You should choose the java version to be java 22, the class path to be Project, and then set the main class to com.example.project.View.HelloApplication.
+- On the configurations page, you should see a drop down menu that says Modify options. Click on this and then click Add VM options. Then copy and paste this into the vm options textfield:
+- "--module-path
+- /Users/jakedoxey/javafx-sdk-22.0.1/lib
+- --add-modules
+- javafx.controls,javafx.fxml"
+- The second line is my computer's path to the javafx library. You will need to add your own file path for that section.
+- After that, you should be able to apply the changes and run the program!
+
 - In order for you to login you will need to created an account or use the premake account( This is a premake Account username: Max Account passwords: Maxuser!lol1! (this program is kinda case sentive to coppies exactly as you see with trim()) You should see the home page and from there there 3 option by login out click on the playstation icon. View your profile and search for game. by clicking on the view profile button, and search game button in the info page. And lastly View the leaderboard. to return to home from any of these pages just click the red buttons.
 
 This is the runnable program!
